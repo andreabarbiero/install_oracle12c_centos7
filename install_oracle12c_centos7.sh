@@ -11,16 +11,17 @@
 #                                                                                                                       #
 # DAL VOSTRO TERMINALE ANDATE NEL PATH DOVE È PRESENTE IL FILE linuxx64_12201_database.zip E LANCIATE IL COMANDO        #
 # SEGUENTE python3 -m http.server QUESTO COMANDO GENERA UN SERVER HTTP IN ASCOLTO ALL'INDIRIZZO http://0.0.0.0:8000/    #
-# A QUESTO PUNTO DOVETE INSERIRE NEL COMANDO WGET L'IP DEL VOSTRO SERVER HTTP                                           #
-# Es. wget http://ip_del_vostro_pc:8000/linuxx64_12201_database.zip ALLA RIGA 82 DI QUESTO SCRIPT                       #
+# A QUESTO PUNTO DOVETE INSERIRE NELLA VARIABILE IP (ALLA RIGA 22) L'INDIRIZZO IP DEL VOSTRO SERVER HTTP                #
+# Es. ip=192.168.1.5                      #
 #                                                                                                                       #  
 #    DOWNLOAD DEL FILE .ZIP PER L'INSTALLAZIONE                                                                         #
 #    https://drive.google.com/file/d/1pBx2F0r8fTzb1fpUzdHluD6OE457Ylwc/view?usp=sharing                                 #
 ######################################################################################################################### 
 
+# inizializzare questa variabile serve per permettere al comando wget nella riga 95 di fare il download del file .zip per l'installazione 
+ip="inserite il vostro indirizzo ip"
 
-ip="192.168.1.13"
-
+# configuro il firewall per permettere al client di connettersi al DB tramite la porta 1521
 firewall-cmd --zone=public --add-port=1521/tcp
 firewall-cmd --reload
 firewall-cmd --zone=home --change-interface=ens33

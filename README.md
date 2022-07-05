@@ -20,7 +20,7 @@ Linux centos12c.localdomain 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UT
 
 # Nel file install_debian8.sh dovete impostare il vostro indirizzo ip nella variabile ip e salvare il file.
 
-# A questo punto potete copiare il file install_debain8.sh nella cartella /root ed eseguire i comandi seguenti come utente root
+# A questo punto potete copiare il file install_oracle12c_centos7.sh nella cartella /root ed eseguire i comandi seguenti come utente root
 
 chmod +x install_oracle12c_centos7.sh
 

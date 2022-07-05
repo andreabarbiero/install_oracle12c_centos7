@@ -18,7 +18,7 @@ root@centos12c:~# uname -a
 
 Linux centos12c.localdomain 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 
-# Nel file install_debian8.sh dovete impostare il vostro indirizzo ip nella variabile ip e salvare il file.
+# Nel file install_oracle12c_centos7.sh dovete impostare il vostro indirizzo ip nella variabile ip e salvare il file.
 
 # A questo punto potete copiare il file install_oracle12c_centos7.sh nella cartella /root ed eseguire i comandi seguenti come utente root
 
